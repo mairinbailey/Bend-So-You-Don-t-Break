@@ -13,8 +13,8 @@ $(document).on('ready', function() {
                     if (poses[i].symptoms.includes(selectedValue)) {
                         recommendedPoses.push(poses[i].name);
 
-                        // var posesImage = "<img"+poses[i].img
-                        // $("#poses").append(posesImage);
+                        var posesImage = "<img src="+ poses[i].img + ">"
+                        $("#poses").append(posesImage);
 
                         var posesTitle = "<h3>"+poses[i].name+"</h3>";
                         $("#poses").append(posesTitle);
