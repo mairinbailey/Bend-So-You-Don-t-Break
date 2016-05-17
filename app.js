@@ -1,16 +1,42 @@
-$(document).on('ready', function () {
+$(document).on('ready', function() {
+    $.get("http://galvanize-yoga.herokuapp.com/",
+        function(data) {
+            var poses = data;
+            // console.log(data);
 
-  $('#symptom-selector').on('change', function (event) {
-    var selectedValue = $(event.currentTarget).val();
-    var recommendedPoses =[];
+            $('#symptom-selector').on('change', function(event) {
+                var selectedValue = $(event.currentTarget).val();
+                var recommendedPoses = [];
+                // var listCounter = 0;
 
-    if (poses[i].symptoms.includes(selectedValue)) {
-        recommendedPoses.push(poses[i].name);
-        console.log(recommendedPoses)
-        return text;
-    }
-    })
-  });
+                for (var i = 0; i < data.length; i++) {
+                    if (poses[i].symptoms.includes(selectedValue)) {
+                        recommendedPoses.push(poses[i].name);
+
+                        // var posesImage = "<img"+poses[i].img
+                        // $("#poses").append(posesImage);
+
+                        var posesTitle = "<h3>"+poses[i].name+"</h3>";
+                        $("#poses").append(posesTitle);
+
+
+                        var listContainer = "<ol class= 'listContainer" + i + "'></ol>";
+
+                        $("#poses").append(listContainer);
+
+                        for (var j=0; j < poses[i].directions.length; j++){
+                          var posesDirection= "<li>" + poses[i].directions[j] + "</li>";
+                          var listElement
+                          $(".listContainer" + i).append(posesDirection);
+
+
+                        }
+
+                    }
+                }
+            })
+        })
+});
 // });
 // })
 

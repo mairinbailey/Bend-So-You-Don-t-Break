@@ -102,8 +102,4 @@ description: ["Lie prone on the floor. Stretch your legs back, with the tops of 
 img: "http://media.yogajournal.com/wp-content/uploads/230_hp_07_fnl_450.jpg"
 }
 ];
-
-function doSomething(){
-console.log(poses)
-};
-doSomething();
+}
