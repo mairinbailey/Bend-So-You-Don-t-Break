@@ -18,11 +18,7 @@ function populateData(data) {
     var text = data.query.pages[id].extract;
     for (var i = 0; i < poses.length; i++) {
       poses[i].description = text;
-        // if (poses[i].symptoms.includes(selectedValue)) {
-        //     recommendedPoses.push(poses[i].name);
-        //     console.log(recommendedPoses)
-        //     return text;
-        // }
+
         console.log(poses);
 }
 }
@@ -53,7 +49,7 @@ function populateData(data) {
     ],
     description: ""
   }
-//   ,
+//    ,
 //   {
 //    name: "Vriksasana",
 //    symptoms: [
@@ -125,7 +121,12 @@ function populateData(data) {
   $('#symptom-selector').on('change', function (event) {
     var selectedValue = $(event.currentTarget).val();
     var recommendedPoses =[];
-    var apiKey = "f56fbd26e000b4c762226bec9a4ab947"
+
+    if (poses[i].symptoms.includes(selectedValue)) {
+        recommendedPoses.push(poses[i].name);
+        console.log(recommendedPoses)
+        return text;
+    }
     })
   });
 // });
