@@ -11,16 +11,18 @@ $(document).on('ready', function() {
 
               for (var i = 0; i < data.length; i++) {
                   if (poses[i].symptoms.includes(selectedValue)) {
-                      recommendedPoses.push(poses[i].name);
+                      recommendedPoses.push(poses[i]);
 }
+}
+              var randomPoses = _.sample(recommendedPoses, 2);
+              for (var i = 0; i < randomPoses.length; i++){
+                var randomPosePosition1 = randomPoses[i];
+                console.log(randomPosePosition1);
 
-              for (var i = 0; i < 4; i++){
-                var randomPosePosition1 = recommendedPoses[Math.floor(Math.random()* recommendedPoses.length)]
-
-                      var posesImage = "<img src="+ poses[randomPosePosition1].img + ">"
+                      var posesImage = "<img src="+ randomPosePosition1.img + ">"
                       $("#poses").append(posesImage);
 
-                      var posesTitle = "<h3>"+poses[randomPosePosition1].name+"</h3>";
+                      var posesTitle = "<h3>"+randomPosePosition1.name+"</h3>";
                       $("#poses").append(posesTitle);
 
 
@@ -28,13 +30,13 @@ $(document).on('ready', function() {
 
                       $("#poses").append(listContainer);
 
-                      for (var j=0; j < poses[randomPosePosition1].directions.length; j++){
-                        var posesDirection= "<li>" + poses[randomPosePosition1].directions[j] + "</li>";
+                      for (var j=0; j < randomPosePosition1.directions.length; j++){
+                        var posesDirection= "<li>" + randomPosePosition1.directions[j] + "</li>";
                         var listElement
                         $(".listContainer" + i).append(posesDirection);
                     }
                 }
-            }
+
         });
 });
 })
