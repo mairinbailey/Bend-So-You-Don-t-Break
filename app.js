@@ -5,7 +5,7 @@ $(document).on('ready', function() {
 
           $('#symptom-selector').on('change', function(event) {
               $("#poses").empty();
-              $(".pageInstructions").empty();
+              $(".pageInstructions > h2 > p").empty();
               var selectedValue = $(event.currentTarget).val();
               var recommendedPoses = [];
 
