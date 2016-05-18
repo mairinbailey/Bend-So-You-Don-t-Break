@@ -5,7 +5,7 @@ $(document).on('ready', function() {
 
           $('#symptom-selector').on('change', function(event) {
               $("#poses").empty();
-              $(".pageInstructions > h2 > p").empty();
+              // $(".pageInstructions > h2 > p").empty();
               var selectedValue = $(event.currentTarget).val();
               var recommendedPoses = [];
 
@@ -17,7 +17,6 @@ $(document).on('ready', function() {
               var randomPoses = _.sample(recommendedPoses, 2);
               for (var i = 0; i < randomPoses.length; i++){
                 var randomPosePosition1 = randomPoses[i];
-                console.log(randomPosePosition1);
 
                       var posesImage = "<img src="+ randomPosePosition1.img + ">"
                       $("#poses").append(posesImage);
