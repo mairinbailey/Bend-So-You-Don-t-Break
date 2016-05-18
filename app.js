@@ -1,10 +1,11 @@
 $(document).on('ready', function() {
-    $.get("http://galvanize-yoga.herokuapp.com/",
+    $.get("https://galvanize-yoga.herokuapp.com/",
         function(data) {
             var poses = data;
             // console.log(data);
 
             $('#symptom-selector').on('change', function(event) {
+                $("#poses").empty();
                 var selectedValue = $(event.currentTarget).val();
                 var recommendedPoses = [];
                 // var listCounter = 0;
@@ -12,7 +13,9 @@ $(document).on('ready', function() {
                 for (var i = 0; i < data.length; i++) {
                     if (poses[i].symptoms.includes(selectedValue)) {
                         recommendedPoses.push(poses[i].name);
-
+// }
+// }
+//                 for
                         var posesImage = "<img src="+ poses[i].img + ">"
                         $("#poses").append(posesImage);
 
@@ -37,6 +40,10 @@ $(document).on('ready', function() {
             })
         })
 });
+// for(var i = 0; i < 3; i++) {
+//   // append this thing
+// var recommendedPoses[Math.floor((Math.random() * recommendedPoses.length) + 1)]
+// }
 // });
 // })
 
