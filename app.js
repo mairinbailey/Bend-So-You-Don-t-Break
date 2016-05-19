@@ -5,7 +5,7 @@ $(document).on('ready', function() {
 
             $('#symptom-selector').on('change', function(event) {
                 $("#poses").empty();
-                // $(".pageInstructions > h2 > p").empty();
+
                 var selectedValue = $(event.currentTarget).val();
                 var recommendedPoses = [];
 
@@ -22,11 +22,11 @@ $(document).on('ready', function() {
                             randomPoses[i].directions[j] +
                             "</li>"
                     }
-                    var pose = "<div class='row'>" +
-                        "<img class='col-md-6' src='" + randomPoses[i].img + "'>" +
+                    var pose = "<div class='row poseDescription'>" +
+                        "<img class='row col-md-6' src='" + randomPoses[i].img + "'>" +
                         "<div class='row col-md-6'>" +
-                        "<h3 class=col-md-12 id='poseName'>" + randomPoses[i].name + "</h3>" +
-                        "<ol class=col-md-12'>" +
+                        "<h3 class='col-md-12' id='poseName'>" + randomPoses[i].name + "</h3>" +
+                        "<ol class='col-md-12'>" +
                         listElems +
                         "</ol>" +
                         " </div>" +
