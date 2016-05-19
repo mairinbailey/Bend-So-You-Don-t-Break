@@ -14,25 +14,30 @@
 
 #background-image{
   background-image: url(http://i.huffpost.com/gen/1954088/images/o-YOGA-MOUNTAIN-facebook.jpg);
-  color: hsl(196, 35%, 93%);
+  color: hsla(0,0%,100%, 0.86);
   background-attachment: fixed;
 }
 
 img {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
   /*padding-top: 2rem;*/
   border-radius: 4rem;
+  padding-right: 4rem;
 }
 
 .row{
   padding: 3rem;
 }
 
-  .poseDescription{
+  .pose{
     background-color: hsla(0,0%,100%, 0.86);
     color: hsl(60, 2%, 8%);
-    padding-left: 4rem;
+    padding-left: 10rem;
     border-radius: 4rem;
     margin: 2rem;
+  }
+
+  .nameDescription{
+    padding-left: 10rem;
   }
