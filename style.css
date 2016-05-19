@@ -6,14 +6,10 @@
     url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.ttf") format("truetype"),
     url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.svg#Samarkan") format("svg");
 }
-html{
 
-}
-
-img {
-  max-width: 400px;
-  max-height: 400px;
-  padding-top: 2rem;
+#title {
+  font-family: 'Samarkan', sans-serif;
+  font-size: 9rem;
 }
 
 #background-image{
@@ -22,18 +18,21 @@ img {
   background-attachment: fixed;
 }
 
-#title {
-  font-family: 'Samarkan', sans-serif;
-  font-size: 9rem;
+img {
+  max-width: 400px;
+  max-height: 400px;
+  /*padding-top: 2rem;*/
+  border-radius: 4rem;
 }
 
 .row{
   padding: 3rem;
 }
-  
+
   .poseDescription{
-    background-color: hsla(220, 27%, 95%, 0.84);
+    background-color: hsla(0,0%,100%, 0.86);
     color: hsl(60, 2%, 8%);
-    padding: 0rem;
-    margin: 5rem;
+    padding-left: 4rem;
+    border-radius: 4rem;
+    margin: 2rem;
   }
