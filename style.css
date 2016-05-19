@@ -1,17 +1,25 @@
+@font-face {font-family: "Samarkan";
+    src:url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.eot");
+    src: url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.svg#Samarkan") format("svg");
+}
+html{
+
+}
+
 img {
   max-width: 400px;
   max-height: 400px;
 }
 
-/*.row.dropdown{
-  margin: 10px;
-}*/
-/*
-.container{
-  display: flex;
-  flex-direction: row;
+#title {
+  font-family: 'Samarkan', sans-serif;
+  font-size: 9rem;
 }
 
-header{
-  display: flex;
-}*/
+.row{
+  padding: 3rem;
+}
