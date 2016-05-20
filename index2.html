@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bend So You Don't Break</title>
-    <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
 
-  <body id="background-image">
-    <div class = "container">
-    <div class = "photoContainer"
-      <header>
-          <h1 id='title'>Bend So You Don't Break</h1>
-      </header>
-      <main>
-          <div class="row dropdown">
-          <div class="col-md-3">
-          <select class="form-control" id="symptom-selector">
-              <option value="">Select Problem Area</option>
-              <option value="back">Back</option>
-              <option value="hips">Hips</option>
-              <option value="legs">Legs</option>
-              <option value="mind">Mind</option>
-              <option value="shoulders">Shoulders</option>
-              <option value="wrists">Wrists</option>
-            </select>
+<body>
+    <div class="container">
+        <header>
+            <h1 id='pageTitle'>Bend So You Don't Break</h1>
+        </header>
+        <main>
+            <div class="row dropdown">
+                <div class="col-md-3">
+                    <select class="form-control" id="symptom-selector">
+                        <option value="">Select Problem  Area</option>
+                        <option value="back">Back</option>
+                        <option value="hips">Hips</option>
+                        <option value="legs">Legs</option>
+                        <option value="mind">Mind</option>
+                        <option value="shoulders">Shoulders</option>
+                        <option value="wrists">Wrists</option>
+                    </select>
+                </div>
             </div>
-          </div>
-
-  <!-- <div class = "pageInstruction">
-    <h2>Welcome!</h2>
-    <p>Bend So You Don't Break is an app to help those new to yoga (or those simply more comfortable practicing at home) by suggesting yoga poses based on user input trouble areas. Ready to get started? Simply choose an area that you would like to stretch from the drop down above!</p>
-  </div> -->
-
-    <div class="poses" id="poses">
-
+            <div id="poses">
+            </div>
+        </main>
     </div>
-    </div>
-  </div>
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="app.js"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
 </html>

@@ -20,9 +20,9 @@ $(document).on('ready', function() {
                     for (var j = 0; j < randomPoses[i].directions.length; j++) {
                         listElems += "<li>" +
                             randomPoses[i].directions[j] +
-                            "</li>"
+                            "</li>";
                     }
-                    var pose = "<div class='row pose'>" +
+                    var appendPose = "<div class='row pose'>" +
                         "<img class='row col-md-6' src='" + randomPoses[i].img + "'>" +
                         "<div class='row col-md-6'>" +
                         "<h3 class='col-md-12 nameDescription'>" + randomPoses[i].name + "</h3>" +
@@ -30,13 +30,13 @@ $(document).on('ready', function() {
                         listElems +
                         "</ol>" +
                         " </div>" +
-                        "</div>"
+                        "</div>";
 
-                    $("#poses").append(pose);
+                    $("#poses").append(appendPose);
 
 
                 }
 
             });
         });
-})
+});

@@ -7,12 +7,13 @@
     url("http://db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.svg#Samarkan") format("svg");
 }
 
-#title {
+#pageTitle {
+  text-align: center;
   font-family: 'Samarkan', sans-serif;
   font-size: 9rem;
 }
 
-#background-image{
+body{
   background-image: url(http://i.huffpost.com/gen/1954088/images/o-YOGA-MOUNTAIN-facebook.jpg);
   color: hsla(0,0%,100%, 0.86);
   background-attachment: fixed;
@@ -21,7 +22,6 @@
 img {
   max-width: 500px;
   max-height: 500px;
-  /*padding-top: 2rem;*/
   border-radius: 4rem;
   padding-right: 4rem;
 }
@@ -30,13 +30,13 @@ img {
   padding: 3rem;
 }
 
-  .pose{
+.pose{
     background-color: hsla(0,0%,100%, 0.86);
     color: hsl(60, 2%, 8%);
     padding-left: 10rem;
     border-radius: 4rem;
     margin: 2rem;
-  }
+}
 
   .nameDescription{
     padding-left: 10rem;
